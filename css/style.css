@@ -1,0 +1,165 @@
+/* General Styling */
+
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+/* :root section for defining color variables */
+:root {
+    --background-color: #CB80AB;  
+    --text-color: #333;        
+    --primary-color: #8967B3;  
+    --secondary-color: #624E88;
+    --accent-color: #E6D9A2;  
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter';
+  font-weight: 700;
+}
+
+html { margin-top: 10px; font-size: 100%;} /* 16px */
+
+h1 {font-size: 3.053rem; /* 48.8px */}
+
+h2 {font-size: 2.442rem; /* 39.04px */}
+
+h3 {font-size: 1.954rem; /* 31.2px */}
+
+h4 {font-size: 1.563rem; /* 24.96px */}
+
+h5 {font-size: 1.250rem; /* 20px */}
+
+small {font-size: 0.800rem; /* 12.8px */}
+
+
+.background {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6x10tX9-Vs69i6RzG6pxlOm5u3kpvuHvfQ&s");
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5; 
+}
+
+body {
+    font-family: 'Inter';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); /* Set background color for the body */
+}
+header {
+    margin: auto;
+    width: 1300px;
+    padding: 20px;
+    text-align: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxevS0I7PMFoi_M6NgWdTGkLKU6NhhBuf7A&s"); /* Match header background to body */
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 1s;
+}
+
+nav a:hover {
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: underline;
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+
+main {
+    padding: 20px; 
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:active {
+    background-color: var(--primary-color); 
+    color: white;
+    border: 2px solid var(--accent-color);
+    padding: 10px 20px;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+/* Hero Section Styling */
+.hero {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--background-color); /* Add background to hero section */
+    border-radius: 10px;
+}
+
+.hero img {
+    max-width: 500px;
+    height: auto;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+/* Community Section Styling */
+/* Community Section Styling */
+#community-section {
+    margin: auto;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    width: 1000px;
+}
+
+#community-section img {
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* About Section Styling */
+#about-section {
+    margin: auto;
+    width: 1200px;
+    background-color: var(--secondary-color); /* Apply secondary color to About section */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--accent-color); /* Apply accent color to footer */
+    padding: 10px;
+    text-align: center;
+}
